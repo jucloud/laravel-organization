@@ -22,7 +22,7 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
         if ($this->app instanceof Application && $this->app->runningInConsole()) {
             $this->publishes([
                 dirname(__DIR__).'/config/easy-organization.php' => config_path('easy-organization.php'), ],
-                'laravel-organization'
+                'easy-organization'
             );
         }
 
