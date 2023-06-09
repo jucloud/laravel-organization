@@ -1,0 +1,36 @@
+{
+    "name": "jucloud/laravel-organization",
+    "description": "专注 天眼查/企查查/启信宝 的 laravel 支付扩展包",
+    "keywords": ["tianyancha", "qichacha", "qixin", "organization", "laravel", "package"],
+    "authors": [
+        {
+            "name": "jucloud",
+            "email": "support@jujiang.biz"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.0 || ^9.0 || ^10.0",
+        "illuminate/contracts": "^8.0 || ^9.0 || ^10.0",
+        "jucloud/easy-organization": "dev-master"
+    },
+    "require-dev": {
+        "laravel/framework": "^8.0 || ^9.0 || ^10.0",
+        "laravel/lumen-framework": "^8.0 || ^9.0 || ^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JuCloud\\LaravelOrganization\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JuCloud\\LaravelOrganization\\ServiceProvider"
+            ],
+            "aliases": {
+                "EasyOrganization": "JuCloud\\LaravelOrganization\\Facades\\EasyOrganization"
+            }
+        }
+    },
+    "license": "MIT"
+}
