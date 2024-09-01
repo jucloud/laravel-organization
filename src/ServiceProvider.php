@@ -42,7 +42,7 @@ class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(dirname(__DIR__).'/config/easy-organization.php', 'organization');
+        $this->mergeConfigFrom(config_path('easy-organization.php'), 'organization');
 
         EasyOrganization::config(config('organization'));
 
